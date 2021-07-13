@@ -1,0 +1,261 @@
+.rule-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .fanctor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .fanctor-list-wrap {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-height: 200px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      .search-reset-box {
+        display: flex;
+        align-self: flex-end;
+        height: 32px;
+        margin-top: 19px;
+        line-height: 32px;
+        .search-input {
+          width: 280px;
+          margin-right: 32px;
+        }
+        .reset-button {
+          margin-right: 32px;
+        }
+      }
+      .fanctor-list {
+        flex: 1;
+        width: 100%;
+        padding: 13px 17px;
+        .fanctor-list-item {
+          align-content: center;
+          float: left;
+          height: 28px;
+          margin: 3px;
+          padding: 3px 8px;
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 400;
+          font-size: 14px;
+          font-family: PingFangSC-Regular;
+          line-height: 22px;
+          border-radius: 2px;
+          outline: 1px solid rgba(0, 0, 0, 0.15);
+          cursor: pointer;
+        }
+        .fanctor-list-item:hover {
+          outline: 2px solid #1890ff;
+        }
+        .fanctor-list-item-selected {
+          align-content: center;
+          float: left;
+          height: 28px;
+          margin: 3px;
+          padding: 3px 8px;
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 400;
+          font-size: 14px;
+          font-family: PingFangSC-Regular;
+          line-height: 22px;
+          border-radius: 2px;
+          outline: 2px solid #1890ff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .fantor-set-wrap {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 64px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-top: none;
+      .operating-fantor {
+        align-content: center;
+        height: 32px;
+        margin-left: 20px;
+        padding: 0 8px;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular;
+        line-height: 32px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+      }
+      .operating-operator {
+        min-width: 136px;
+        min-height: 32px;
+        margin-bottom: 0;
+        margin-left: 8px;
+        border-radius: 2px;
+      }
+      .operating-value {
+        min-width: 136px;
+        min-height: 32px;
+        margin-bottom: 0;
+        margin-left: 8px;
+        border-radius: 2px;
+      }
+      .operating-nofantor {
+        margin-left: 20px;
+        color: rgba(0, 0, 0, 0.25);
+        font-weight: 400;
+        font-size: 14px;
+        font-family: PingFangSC-Regular;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .add-button {
+    margin: 12px 0;
+  }
+
+  .rule-edit {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .relation-select {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 48px;
+      color: #262626;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      .relation-item {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium;
+        line-height: 28px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+      }
+      .relation-item:hover {
+        border-radius: 2px;
+        box-shadow: 0 2px 5px 0 #b6dcff, 0 6px 10px 0 #d5ebff;
+      }
+      .relation-item:nth-child(1) {
+        margin-left: 8px;
+      }
+    }
+    .rule-show-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      min-height: 192px;
+      padding: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-top: none;
+      .show-item-wrap {
+        height: 0;
+      }
+      .show-item,
+      .show-item-detail {
+        position: relative;
+        margin-bottom: 15px;
+        margin-left: 8px;
+        user-select: none;
+        .relation-card {
+          width: 36px;
+          height: 64px;
+          color: #1890ff;
+          font-weight: 500;
+          font-size: 16px;
+          font-family: PingFangSC-Medium;
+          line-height: 64px;
+          text-align: center;
+          border: 1px solid #91d5ff;
+          border-radius: 2px;
+        }
+        .rule-card {
+          width: 108px;
+          height: 64px;
+          padding: 5px 12px;
+          overflow: auto;
+          color: rgba(0, 0, 0, 0.85);
+          font-weight: 400;
+          font-size: 12px;
+          font-family: PingFangSC-Regular;
+          line-height: 18px;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 2px;
+        }
+        .operate-card {
+          position: relative;
+          top: 10px;
+          left: 50%;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          width: 36px;
+          height: 64px;
+          background: white;
+          border-radius: 2px;
+          box-shadow: 0 2px 5px 0 #b6dcff, 0 6px 10px 0 #d5ebff;
+          transform: translate(-50%);
+          .operate-icon {
+            width: 16px;
+            height: 16px;
+            margin-top: 12px;
+            cursor: pointer;
+          }
+          .drag-icon {
+            background: url('../../../assets/rule_drag.png');
+          }
+          .delete-icon {
+            background: url('../../../assets/rule_delete.png');
+          }
+        }
+      }
+      .show-item:hover {
+        .operate-card {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+.drag-remark {
+  position: relative;
+  display: none;
+  border-left: 2px solid red;
+}
+.drag-left {
+  display: flex !important;
+  .drag-remark {
+    display: block;
+    margin-right: 4px;
+  }
+  &:hover {
+    .operate-card {
+      display: none;
+    }
+  }
+  .operate-card {
+    left: 104px;
+  }
+}
+.drag-right {
+  display: flex !important;
+  flex-direction: row-reverse;
+  .drag-remark {
+    display: block;
+    margin-left: 4px;
+  }
+  &:hover {
+    .operate-card {
+      display: none;
+    }
+  }
+  .operate-card {
+    right: 104px;
+  }
+}

@@ -1,0 +1,36 @@
+export const domains = [
+  { value: 'risk', label: '安全域' },
+  { value: 'payment', label: '支付结算域' },
+  { value: 'accounts', label: '账务域' },
+  { value: '4', label: '交易域' },
+  { value: 'product', label: '产品域' },
+  { value: 'insuredobject', label: '标的域' },
+  { value: 'undertake', label: '承保域' },
+  { value: 'endorse', label: '批改域' },
+  { value: 'promotion', label: '营销域' },
+  { value: 'contract', label: '合约域' },
+  { value: 'document', label: '单证域' },
+  { value: 'customer-contact', label: '客户接触域' },
+  { value: 'customer', label: '客户域' },
+  { value: 'cooperation', label: '合作开放域' },
+  { value: 'aboss', label: '运营支撑域' },
+  { value: 'policy', label: '保单服务域' }
+]
+
+export const dictTypes = [
+  'domain',
+  'biz_type',
+  'dispatch_policy',
+  'dispatch_rule',
+  'org',
+  'coop_cert_type',
+  'member_status',
+  'business_type',
+  'task_type',
+  'prescription_unit',
+  'due_notice_object',
+  'due_notice_way',
+  'due_dispose_way',
+  'job_domain',
+  'buss_category',
+];

@@ -1,0 +1,30 @@
+.card-child-title .card-child-title-border {
+  display: inline-block;
+  width: 4px;
+  height: 14px;
+  margin-right: 6px;
+  background-color: #1890ff;
+}
+
+.content-wrap {
+  background: rgba(0, 0, 0, 0.04);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.card-content {
+  font-family: PingFangSC-Semibold;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.85);
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 240px;
+}

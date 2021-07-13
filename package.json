@@ -1,0 +1,48 @@
+{
+  "name": "@lnpm/lampui-regulation",
+  "version": "0.1.24",
+  "description": "规则页面组件及Form组件",
+  "main": "lib/index.js",
+  "keywords": [
+    "lamp"
+  ],
+  "scripts": {
+    "lint": "lamp lint ./src/** ./demo/**",
+    "test": "test",
+    "ci": "tnpm run lint & tnpm run test",
+    "start": "lamp dev",
+    "dev": "lamp dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-form": "1.27.0",
+    "@ant-design/pro-table": "^2.37.0",
+    "@lnpm/lampui-basic-ossuploader": "^1.7.10",
+    "antd": "^4.6.6",
+    "lodash": "^4.17.11",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "umi-request": "^1.3.5",
+    "xlsx": "^0.16.9"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.1",
+    "eslint": "^7.11.0",
+    "eslint-config-ali": "^11.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2"
+  },
+  "peerDependencies": {},
+  "ci": {
+    "coverageReport": "./bin/alicov-report.js",
+    "versions": "10",
+    "fullParallel": true
+  },
+  "lamp": {
+    "type": "component"
+  }
+}

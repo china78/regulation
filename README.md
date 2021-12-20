@@ -1,21 +1,4 @@
-## 使用方式
 
-### 安装
-
-```
-@lnpm/lampui-regulation
-
-需要先配置host:
-
-# lnpm
-121.41.142.212 lnpm.gtsfe.com # 外网环境
-10.253.109.204   lnpm.gtsfe.com # 内网环境 pod IP每次发布会变
-
-再执行以下命令:
-
-cnpm install @lnpm/lampui-regulation --registry=http://121.41.142.212:7001 -S
-
-```
 
 ### 请求拦截配置
 
